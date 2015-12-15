@@ -1,0 +1,30 @@
+<%- include header %>
+<div class="col-md-9 col-md-offset-1">
+  <div><h3><a href="/blog/<%= post._id %>"><%= post.title %></a></h3>
+  </div>
+  <div><p><%- post.markedContent %></p></div>
+  <div class="info">
+    <i class="fa fa-user"></i><a href="/user/<%= post.name %>"> <%= post.name %></a> |
+    <i class="fa fa-pencil-square-o"></i><small> <%= post.createTime %></small> |
+    <i class="fa fa-clock-o"></i><small> <%= post.updateTime %></small>
+    <% if (user && (user.name == post.name)) { %>
+      <span><a class="btn btn-info btn-xs" href="/edit/<%= post._id %>" role="button">Edit</a></span>
+      <span><a class="btn btn-danger btn-xs" href="/remove/<%= post._id %>" role="button">Delete</a></span>
+    <% } %>
+  </div>
+  <hr>
+</div>
+<!-- <% if (user && (user.name == post.name)) { %>
+<p>
+  <span><a class="edit" href="/edit/<%= post._id %>">Edit</a></span>
+  <span><a class="edit" href="/remove/<%= post._id %>">Delete</a></span>
+</p>
+<% } %>
+<p class="info">
+  Author：<a href="/user/<%= post.name %>"><%= post.name %></a> |
+  Posted at: <%= post.createTime %> |
+  Updated at: <%= post.updateTime %>
+</p>
+<p><%- post.content %></p> -->
+<%- include comment %>
+<%- include footer %>

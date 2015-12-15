@@ -1,0 +1,233 @@
+Xsession: X session started for chenhan at Tue Nov 24 16:43:44 PST 2015
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  109 (X_ChangeHosts)
+  Value in failed request:  0x5
+  Serial number of failed request:  6
+  Current serial number in output stream:  8
+localuser:chenhan being added to access control list
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+  Major opcode of failed request:  109 (X_ChangeHosts)
+  Value in failed request:  0x5
+  Serial number of failed request:  6
+  Current serial number in output stream:  8
+Xlib:  extension "RANDR" missing on display ":1".
+xfce4-session-Message: ssh-agent is already running
+Xlib:  extension "RANDR" missing on display ":1.0".
+
+(xfwm4:2588): xfwm4-WARNING **: The display does not support the XRender extension.
+
+(xfwm4:2588): xfwm4-WARNING **: The display does not support the XRandr extension.
+
+(xfwm4:2588): xfwm4-WARNING **: The display does not support the XComposite extension.
+
+(xfwm4:2588): xfwm4-WARNING **: The display does not support the XDamage extension.
+
+(xfwm4:2588): xfwm4-WARNING **: The display does not support the XFixes extension.
+
+(xfwm4:2588): xfwm4-WARNING **: Compositing manager disabled.
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+
+** (xfce4-volumed:2623): WARNING **: Binding 'XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Alt>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Shift>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Shift>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Alt>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Alt><Shift>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Shift><Alt>XF86AudioRaiseVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding 'XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Alt>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Shift>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Shift>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Alt>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Alt><Shift>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Shift><Alt>XF86AudioLowerVolume' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding 'XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Alt>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Shift>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Shift>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Alt>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Alt><Shift>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Binding '<Ctrl><Shift><Alt>XF86AudioMute' failed!
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+** (xfce4-volumed:2623): WARNING **: Failed to map virtual modifiers
+
+(xfsettingsd:2633): xfsettingsd-CRITICAL **: No RANDR extension found in display :1.0. Display settings won't be applied.
+Xlib:  extension "XInputExtension" missing on display ":1.0".
+
+(xfsettingsd:2633): xfsettingsd-CRITICAL **: XI is not present.
+
+(xfsettingsd:2633): xfsettingsd-CRITICAL **: Failed to initialize the Xkb extension.
+
+(xfsettingsd:2633): xfsettingsd-CRITICAL **: Failed to initialize the Accessibility extension.
+
+(xfsettingsd:2633): GLib-CRITICAL **: g_str_has_prefix: assertion 'prefix != NULL' failed
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+
+(xfsettingsd:2633): GLib-CRITICAL **: g_hash_table_destroy: assertion 'hash_table != NULL' failed
+
+(xfsettingsd:2633): GLib-GObject-CRITICAL **: object XklEngine 0x7f782587f7a0 finalized while still in-construction
+
+(xfsettingsd:2633): GLib-GObject-CRITICAL **: Custom constructor for class XklEngine returned NULL (which is invalid). Please use GInitable instead.
+
+(polkit-gnome-authentication-agent-1:2602): GLib-CRITICAL **: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-gnome-authentication-agent-1:2602): polkit-gnome-1-WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+Failure: Module initialization failed
+
+(xfwm4:2588): GLib-CRITICAL **: g_str_has_prefix: assertion 'prefix != NULL' failed
+
+(xfwm4:2588): xfwm4-WARNING **: The property '/general/double_click_distance' of type int is not supported
+
+(xfce4-panel:2592): libxfce4ui-WARNING **: ICE I/O Error
+
+(xfce4-panel:2592): libxfce4ui-WARNING **: Disconnected from session manager.
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(xfce4-panel:2592): Gtk-CRITICAL **: IA__gtk_widget_show: assertion 'GTK_IS_WIDGET (widget)' failed
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+
+(Thunar:2594): GLib-CRITICAL **: Source ID 925 was not found when attempting to remove it
+
+(Thunar:2594): Gdk-CRITICAL **: IA__gdk_window_get_window_type: assertion 'GDK_IS_WINDOW (window)' failed
+
+(Thunar:2594): Gtk-WARNING **: Error loading theme icon 'user-trash-full' for stock: Icon 'user-trash-full' not present in theme
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+Xlib:  extension "RANDR" missing on display ":1.0".
+xfwm4: Fatal IO error 4 (Interrupted system call) on X server :1.0.
+xfdesktop: Fatal IO error 11 (Resource temporarily unavailable) on X server :1.0.

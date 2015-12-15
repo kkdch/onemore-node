@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Blog</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">MyBlog</a>
+        <ul class="nav navbar-nav navbar-collapse collapse">
+          <li><a href="/">Home</a></li>
+          <% if (user) { %>
+          <li><a href="/post">New Post</a></li>
+          <li><a href="/logout">Log Out</a></li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="navbar-collapse collapse navbar-right">
+          <% if (user) {%>
+            <div class="navbar-header">
+              <ul class="nav navbar-nav">
+                <li><a href="/user/<%= user.name %>">Hello, <%= user.name %></a></li>
+              </ul>
+            </div>
+          <%} else { %>
+            <form name="login-form" class="navbar-form navbar-collapse collapse" method="post" action="/">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Username" class="form-control" autocomplete="off" required>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" placeholder="Password" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+              <div class="form-group">
+                <a class="btn btn-primary" href="/reg" role="button">Sign Up</a>
+              </div>
+            </form>
+          <% } %>
+          <!-- <li><a title="Main" href="/">Home</a></li>
+          <% if (user) { %>
+            <li><a title="Post" href="/post">Post</a></li>
+            <li><a title="Logout" href="/logout">Logout</a></li>
+          <% } else { %>
+            <li><a title="Login" href="/login">Login</a></li>
+            <li><a title="Register" href="/reg">Register</a></li>
+          <% } %> -->
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="pull-right popup">
+    <% if (success) { %>
+      <button type="button" class="btn btn-success"><%= success %></button>
+    <% } %>
+    <% if (error) { %>
+      <button type="button" class="btn btn-warning"><%= error %></button>
+    <% } %>
+	</div> -->
+  <div class="container maincontent">
+    <div class="row">
+      <div class="col-md-1 col-md-offset-10">
+        <% if (success) { %>
+          <button type="button" class="btn btn-success"><%= success %></button>
+        <% } %>
+        <% if (error) { %>
+          <button type="button" class="btn btn-warning"><%= error %></button>
+        <% } %>
+      </div>
+    </div>
+    <div class="row">

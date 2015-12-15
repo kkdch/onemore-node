@@ -1,0 +1,13 @@
+<%- include header %>
+  <form name="post-form" class="col-md-9 col-md-offset-1" method="post">
+    <div class="form-group">
+      <label for="inputTitle">Title</label>
+      <input type="text" name="title" id="inputTitle" class="form-control" placeholder="Title" required>
+    </div>
+    <div class="form-group">
+      <label for="inputContent">Content</label>
+      <textarea type="text" name="post" id="inputContent" class="form-control" rows="16" required></textarea>
+    </div>
+    <input class="btn btn-primary" type="submit" value="submit"/>
+  </form>
+<%- include footer %>

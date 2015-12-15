@@ -1,0 +1,28 @@
+<%- include header %>
+<form name="post-form" class="col-md-4 col-md-offset-4" method="post">
+  <div class="form-group">
+    <label for="inputName">Username</label>
+    <input type="text" name="name" id="inputName" class="form-control" placeholder="Username" required>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  </div>
+  <div class="form-group">
+    <label for="inputCPassword">Confirm Password</label>
+    <input type="password" name="password-repeat" id="inputCPassword" class="form-control" placeholder="Confirm Password" required>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail">Email</label>
+    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="E-mail" required>
+  </div>
+  <input class="btn btn-primary" type="submit" value="submit"/>
+</form>
+<!-- <form method="post">
+  username：  <input type="text" name="name"/><br />
+  password：    <input type="password" name="password"/><br />
+  comfirm password：<input type="password" name="password-repeat"/><br />
+  email：    <input type="email" name="email"/><br />
+           <input type="submit" value="register"/>
+</form> -->
+<%- include footer %>
