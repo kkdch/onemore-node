@@ -5,6 +5,7 @@ var stripe = require("stripe")("sk_test_xgN9ij5LtKBOKYCkDS805kt3");
 
 module.exports = function(app) {
   var checkout = function(req, res) {
+    console.log(req.body);
     var stripeToken = req.body.stripeToken;
     var charge = stripe.charges.create({
       amount: 1000, // amount in cents, again
