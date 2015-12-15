@@ -33,8 +33,11 @@ module.exports = function(app) {
     });
   };
 
-  app.get('/', function(req, res) {
+  app.get('/index', function(req, res) {
     res.render('index');
+  });
+  app.get('/test', function(req, res) {
+    res.render('test');
   });
   app.post('/', checkout);
 };
