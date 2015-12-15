@@ -5,35 +5,16 @@ var stripe = require("stripe")("sk_test_xgN9ij5LtKBOKYCkDS805kt3");
 
 module.exports = function(app) {
   var checkout = function(req, res) {
-    console.log(stripe.charges);
-    stripe.orders.create({
-      currency: 'usd',
-      items: [
-        {
-          type: 'sku',
-          parent: 'sku_7WWfSm9CPP55hx'
-        }
-      ],
-      shipping: {
-        name: 'Jenny Rosen',
-        address: {
-          line1: '1234 Main Street',
-          city: 'Anytown',
-          country: 'US',
-          postal_code: '123456'
-        }
-      },
-      email: 'jenny@ros.en'
-    }, function(err, order) {
-      // asynchronously called
-      if (err) {
-
+    var stripeToken = request.body.stripeToken;
+    var charge = stripe.charges.create({
+      amount: 1000, // amount in cents, again
+      currency: "usd",
+      source: stripeToken,
+      description: "Example charge"
+    }, function(err, charge) {
+      if (err && err.type === 'StripeCardError') {
+        // The card has been declined
       }
-      stripe.orders.pay(order.id, {
-        source: req.body.stripeToken // obtained with Stripe.js
-      }, function(err, order) {
-        // asynchronously called
-      });
     });
   };
 
