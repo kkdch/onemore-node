@@ -7,11 +7,14 @@ module.exports = function(app) {
   var checkout = function(req, res) {
     console.log(req.body);
     var stripeToken = req.body.stripeToken;
+    var detail = req.body.firstName + " " + req.body.lastName + " ";
+    detail += req.body.address1 + " " + req.body.address2 + " ";
+    detail += req.body.city + " " + req.body.state + " " + req.body.postalCode;
     var charge = stripe.charges.create({
       amount: 1000, // amount in cents, again
       currency: "usd",
       source: stripeToken,
-      description: "Example charge"
+      description: detail
     }, function(err, charge) {
       if (err && err.type === 'StripeCardError') {
         // The card has been declined
