@@ -10,7 +10,6 @@ module.exports = function(app) {
     var detail = req.body.firstName + " " + req.body.lastName + " ";
     detail += req.body.address1 + " " + req.body.address2 + " ";
     detail += req.body.city + " " + req.body.state + " " + req.body.postalCode;
-    var message = "";
     var charge = stripe.charges.create({
       amount: 1000, // amount in cents, again
       currency: "usd",
@@ -19,15 +18,18 @@ module.exports = function(app) {
     }, function(err, charge) {
       if (err && err.type === 'StripeCardError') {
         // The card has been declined
-        message = "The card has been declined";
+        res.render('successful', {
+          message: "The card has been declined"
+        });
       } else if (err) {
-        message = "Error"
+        res.render('successful', {
+          message: "Error"
+        });
       } else {
-        message = "Successful";
+        res.render('successful', {
+          message: "Thanks for your payment"
+        });
       }
-    });
-    res.render('successful', {
-      message: message
     });
   };
 
