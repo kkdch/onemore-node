@@ -14,8 +14,13 @@ module.exports = function(app) {
     }, function(err, charge) {
       if (err && err.type === 'StripeCardError') {
         // The card has been declined
+        return res.json({message: 'The card has been declined'});
+      }
+      if (err) {
+        return res.json({message: 'Error'});
       }
     });
+    return res.json({message: 'Successful'});
   };
 
   app.get('/', function(req, res) {
