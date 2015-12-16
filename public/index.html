@@ -1,13 +1,14 @@
-<html lang="en" ng-app="myApp">
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 <head>
-  <!-- Angular Material style sheet -->
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc5/angular-material.min.css">
-  <link rel="stylesheet" href="1.css">
-<link rel="stylesheet" href="shoppingcart/shoppingcart.css">
-  <link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<title>1More</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,44 +17,9 @@
 <script src="js/jquery.min.js"></script>
 <!--<script src="js/jquery.easydropdown.js"></script>-->
 <!--start slider -->
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/demo.css" />
-<link rel="stylesheet" type="text/css" href="css/component.css" />
 <script src="js/modernizr.min.js"></script>
-<link rel="stylesheet" href="css/onemore.css">
 <script src="js/jquery-ui.min.js"></script>
-<script src="js/fwslider.js"></script>
-<script src="js/quickslider.js"></script>
-<base href="/">
-  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-  <script type="text/javascript">
-      Stripe.setPublishableKey('pk_test_GDijmvo7Lo0vLn9NamxLwScQ');
-  </script>
-</head>
-<body ng-cloak>
-  <!--
-    Your HTML content here
-  -->
-
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
-
-  <!-- Angular Material Library -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc7/angular-material.min.js"></script>
-
-  <script src="app.js"></script>
-  <script src="product1/product1.js"></script>
-
-  <script src="product2/product2.js"></script>
-  <script src="product3/product3.js"></script>
-  <script src="product4/product4.js"></script>
-  <script src="shoppingcart/shoppingcart.js"></script>
-
+<!--end slider -->
 <script type="text/javascript">
         $(document).ready(function() {
             $(".dropdown img.flag").addClass("flagvisibility");
@@ -92,42 +58,9 @@
           });
         });
      </script>
-  
-  <script type="text/javascript">
-      Stripe.setPublishableKey('pk_test_GDijmvo7Lo0vLn9NamxLwScQ');
-  </script>
-  <script>
-      jQuery(function($) {
-        $('#payment-form').submit(function(event) {
-          console.log("enter");
-          console.log("enter");
-          console.log("enter");
-          var $form = $(this);
-          $form.find('button').prop('disabled', true);
-          Stripe.card.createToken($form, stripeResponseHandler);
-          return false;
-        });
-      });
-      function stripeResponseHandler(status, response) {
-        var $form = $('#payment-form');
-        console.log(response);
-        if (response.error) {
-          $form.find('.payment-errors').text(response.error.message);
-          $form.find('button').prop('disabled', false);
-        } else {
-          var token = response.id;
-          $form.append($('<input type="hidden" name="stripeToken" />').val(token));
-          $form.get(0).submit();
-        }
-      };
-</script>
-    <script src="shoppingcart/shoppingcart.js"></script>
-
-  <!-- Your application bootstrap  -->
-
-
-  <div ng-controller="AppCtrl as appCtrl" ng-cloak>
- <div class="header">
+</head>
+<body>
+	<div class="header">
 		<div class="row">
 			  <div class="col-md-12">
 				 <div class="header-left">
@@ -135,11 +68,10 @@
 						<a href="index.html"><img class="logo-image" src="newImages/Logo/LOGO.png" alt="" height="35" width="75"/></a>
 					 </div>
           <ul class="header-menu">
-                  <li><a href="#">HOME</a></li>
-                  <li><a href="#">PRODUCT</a></li>
+                  <li><a href="shop.html">HOME</a></li>
+                  <li><a href="team.html">PRODUCT</a></li>
                   <li><a href="experiance.html">PRESS</a></li>
                   <li><a href="experiance.html">SUPPORT</a></li>
-                  <li><a href="shop.html">BLOG FORUM</a></li>
                 <div class="clear"></div>
           </ul>
 	    		  <div class="clear"></div>
@@ -149,14 +81,93 @@
           </div>
 				    <ul class="icon1 sub-icon1 profile_img">
               <li><a class="active-icon c1" href="#"> </a></li>
-              <li><a class="sb-icon-search" href="#shoppingcart"> </a></li>
+              <li><a class="sb-icon-search"> </a></li>
 				   </ul>
 		           <div class="clear"></div>
 	       </div>
 	      </div>
 	 </div>
 	</div>
-	<div ng-view> </div>
+	<div class="banner">
+	 <div data-spy="affix" id="dot-nav">
+      <ul>
+        <li class="awesome-tooltip active" title=""><a href="#video"></a></li>
+        <li class="awesome-tooltip" title=""><a href="#home"></a></li>
+        <li class="awesome-tooltip" title=""><a href="#projects"></a></li>
+        <li class="awesome-tooltip" title=""><a href="#contact"></a></li>
+      </ul>
+  </div>
+    
+    <div id="main" class="container">
+     <section id="video">
+           <article>
+               <div class="row">
+                   <div class="col-md-12 video">
+                      <img class="video-img" src="images/video-img.jpg"/>
+                   </div>
+                  </div>
+               </div>
+           </article>           
+        </section>
+        <section id="home">
+           <article>
+               <div class="row">
+                   <div class="col-md-12 home">
+                      <img class="slide-img" src="images/slide1.jpg"/>
+                      <div class="home-content">
+                        <h3 style="color: #CC0000">Latest Product</h3>
+                        <h1 style="color: #fff;font-size:3em; margin-bottom:20px;">1M301</h1>
+                        <a href="./1m301.html">
+                          <button class="home-listen-button">LISTEN IT</button>
+                        </a>
+                      </div>
+                   </div>
+                  </div>
+               </div>
+           </article>           
+        </section>
+        <section id="projects">
+           <article>
+               <div class="row">
+                  <div class="col-md-12 collection">
+                     <div class="collection-box" style="float:left;">
+                        <a href="./1m301.html">
+                          <img class="collection-img" src="images/slide3-1.jpg"/>
+                          <h1 class="collection-text">1M301</h1>
+                        </a>
+                      </div>
+                      <div class="collection-box" style="float:right;">
+                        <a href="./MK801.html">
+                          <img class="collection-img" src="images/slide3-2.jpg"/>
+                          <h1 class="collection-text">MK801</h1>
+                        </a>
+                      </div>
+                  </div>
+               </div>
+           </article>           
+        </section>
+        <section id="contact">
+           <article>
+               <div class="row">
+                  <div class="col-md-12 collection">
+                      <div class="collection-box" style="float:left;">
+                        <a href="./E0323.html">
+                          <img class="collection-img" src="images/slide4-1.jpg"/>
+                          <h1 style="margin-top: 20px;" class="collection-text">E0323</h1>
+                        </a>
+                      </div>
+                      <div class="collection-box" style="float:right;">
+                        <a href="./E0301.html">
+                          <img class="collection-img" src="images/slide4-2.jpg"/>
+                          <h1 style="margin-top: 20px;" class="collection-text">E0301</h1>
+                        </a>
+                      </div>
+                  </div>
+               </div>
+           </article>           
+        </section>        
+    </div>
+<!-- gallery end -->
 <div class="footer">
             <div class="container">
                 <div class="row">
@@ -203,8 +214,67 @@
                 </div>
             </div>
         </div>
-  
-  </div>
+  <script type="text/javascript">
+   $(document).ready(function(){
+    $('.awesome-tooltip').tooltip({
+        placement: 'left'
+    });   
 
+    $(window).bind('scroll',function(e){
+      dotnavigation();
+    });
+    
+    function dotnavigation(){
+             
+        var numSections = $('section').length;
+        
+        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');     
+        $('section').each(function(i,item){
+          var ele = $(item), nextTop;
+          
+          console.log(ele.next().html());
+          
+          if (typeof ele.next().offset() != "undefined") {
+            nextTop = ele.next().offset().top;
+          }
+          else {
+            nextTop = $(document).height();
+          }
+          
+          if (ele.offset() !== null) {
+            thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
+          }
+          else {
+            thisTop = 0;
+          }
+          
+          var docTop = $(document).scrollTop();
+          
+          if(docTop >= thisTop && (docTop < nextTop)){
+            $('#dot-nav li').eq(i).addClass('active');
+          }
+        });   
+    }
+
+    /* get clicks working */
+    $('#dot-nav li').click(function(){
+      
+        var id = $(this).find('a').attr("href"),
+          posi,
+          ele,
+          padding = 0;
+      
+        ele = $(id);
+        posi = ($(ele).offset()||0).top - padding;
+      
+        $('html, body').animate({scrollTop:posi}, 'slow');
+      
+        return false;
+    });
+
+/* end dot nav */
+});
+
+  </script>
 </body>
 </html>

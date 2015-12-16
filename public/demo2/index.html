@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<header>
+<div class="header">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                 <div class="header-left">
+                     <div class="logo">
+                        <a href="index.html">
+                            <img src="newImages\Logo\LOGO.png" alt="" class="header-logo"/>
+                        </a>
+                     </div>
+                     <div class="menu">
+                          <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+                            <ul class="nav" id="nav">
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="team.html">Team</a></li>
+                                <li><a href="experiance.html">Events</a></li>
+                                <li><a href="experiance.html">Experiance</a></li>
+                                <li><a href="shop.html">Company</a></li>
+                                <li><a href="contact.html">Contact</a></li>                             
+                                               <button id='testbtn'>test</button>
+                                <div class="clear"></div>
+                            </ul>
+                            <script type="text/javascript" src="js/responsive-nav.js"></script>
+                    </div>                          
+                    <div class="clear"></div>
+                </div>
+               
+          </div>
+         </div>
+        </div>
+    </div>
+    </header>
+    <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+  
+               
+         
+                        <div id="quickslider">
+                            <div class="quickslider">
+                                <div id="1">
+                                    <img  src="newImages/man_model1.jpg" alt="placeholder image">
+                                    
+                                </div>
+                             
+                              
+                              
+                                
+                            </div><!--quickslider-->
+
+                            <div class="nav-thumbs">
+                                <ul>
+                                    <li><a href="#" class="1" data-slide="1">1</a></li>
+                                    <li><a href="#" class="2" data-slide="2">2</a></li>
+                                    <li><a href="#" class="3" data-slide="3">3</a></li>
+                                    <li><a href="#" class="4" data-slide="4">4</a></li>
+                                </ul>
+                            </div>
+
+                  
+                                    </div><!--quickslider-->
+         
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <footer>
+<div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>PRODUCT</h4>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">TECH SPECS</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>COMPANY</h4>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">PRESS</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CAREER</a></li>
+              <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>SOCIAL STUFF</h4>
+                            <li><a href="#">FACEBOOK</a></li>
+                            <li><a href="#">TWITTER</a></li>
+                            <li><a href="#">PINTEREST</a></li>
+                            <li><a href="#">INSTAGRAM</a></li>
+                        </ul>
+                    </div>
+          <div class="col-md-2">
+            <ul class="footer_box">
+              <h4>ENGLISH <span class="caret"></span></h4>
+            </ul>
+          </div>
+                    <div class="col-md-offset-1 col-md-3">
+                        <ul class="footer_box">
+                            <li><img class="logo-footer" src="newImages\Logo\LOGO.png"/></li>
+              <li><a href="#">email address</a></li>
+              <hr>
+              <li><a href="#">Copyright Terms & Conditions | Privacy Policy</a></li>
+         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slider.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#testbtn").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

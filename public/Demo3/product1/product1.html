@@ -1,0 +1,140 @@
+<div class="banner">
+	 <div data-spy="affix" id="dot-nav">
+      <ul>
+        <li class="awesome-tooltip active" title="Home"><a href="#video"></a></li>
+        <li class="awesome-tooltip" title="Video"><a href="#home"></a></li>
+        <li class="awesome-tooltip" title="Collection"><a href="#projects"></a></li>
+        <li class="awesome-tooltip" title="Collection"><a href="#contact"></a></li>
+      </ul>
+  </div>
+    
+    <div id="main" class="container">
+     <section id="video">
+           <article>
+               <div class="row">
+                   <div class="col-md-12 video">
+                      <img class="slide-img" src="images/video-img.jpg"/>
+                   </div>
+                  </div>
+               </div>
+           </article>           
+        </section>
+        <section id="home">
+           <article>
+               <div class="row">
+                   <div class="col-md-12 home">
+                      <img class="slide-img" src="images/slide1.jpg"/>
+                      <div class="home-content">
+                        <h3 style="color: #CC0000">Latest Product</h3>
+                        <h1 style="color: #fff;font-size:3em;">1M301</h1>
+                        <button class="home-listen-button" ng-click='prod1Ctrl.addProduct1()'>LISTEN IT</button>
+                      </div>
+                   </div>
+                  </div>
+               </div>
+           </article>           
+        </section>
+        <section id="projects">
+           <article>
+               <div class="row">
+                  <div class="col-md-12 collection">
+                     <div class="collection-box" style="float:left;">
+                        <a href="#">
+                          <img class="collection-img" src="images/slide3-1.jpg"/>
+                          <h1 class="collection-text">1M301</h1>
+                        </a>
+                      </div>
+                      <div class="collection-box" style="float:right;">
+                        <a href="#">
+                          <img class="collection-img" src="images/slide3-2.jpg"/>
+                          <h1 class="collection-text">MK801</h1>
+                        </a>
+                      </div>
+                  </div>
+               </div>
+           </article>           
+        </section>
+        <section id="contact">
+           <article>
+               <div class="row">
+                  <div class="col-md-12 collection">
+                      <div class="collection-box" style="float:left;">
+                        <a href="#">
+                          <img class="collection-img" src="images/slide4-1.jpg"/>
+                          <h1 class="collection-text">e0323</h1>
+                        </a>
+                      </div>
+                      <div class="collection-box" style="float:right;">
+                        <a href="#">
+                          <img class="collection-img" src="images/slide4-2.jpg"/>
+                          <h1 class="collection-text">MK301</h1>
+                        </a>
+                      </div>
+                  </div>
+               </div>
+           </article>           
+        </section>        
+    </div>
+	<script type="text/javascript">
+   $(document).ready(function(){
+    $('.awesome-tooltip').tooltip({
+        placement: 'left'
+    });   
+
+    $(window).bind('scroll',function(e){
+      dotnavigation();
+    });
+    
+    function dotnavigation(){
+             
+        var numSections = $('section').length;
+        
+        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');     
+        $('section').each(function(i,item){
+          var ele = $(item), nextTop;
+          
+          console.log(ele.next().html());
+          
+          if (typeof ele.next().offset() != "undefined") {
+            nextTop = ele.next().offset().top;
+          }
+          else {
+            nextTop = $(document).height();
+          }
+          
+          if (ele.offset() !== null) {
+            thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
+          }
+          else {
+            thisTop = 0;
+          }
+          
+          var docTop = $(document).scrollTop();
+          
+          if(docTop >= thisTop && (docTop < nextTop)){
+            $('#dot-nav li').eq(i).addClass('active');
+          }
+        });   
+    }
+
+    /* get clicks working */
+    $('#dot-nav li').click(function(){
+      
+        var id = $(this).find('a').attr("href"),
+          posi,
+          ele,
+          padding = 0;
+      
+        ele = $(id);
+        posi = ($(ele).offset()||0).top - padding;
+      
+        $('html, body').animate({scrollTop:posi}, 'slow');
+      
+        return false;
+    });
+
+/* end dot nav */
+});
+
+  </script>
+<!-- gallery end -->

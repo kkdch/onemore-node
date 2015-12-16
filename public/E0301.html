@@ -1,0 +1,204 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Product</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+
+            $("#testbtn").click(function () {
+            $("#sidebar").toggleClass("collapsed");
+           // $("#slider_container1").toggleClass("col-md-12 col-md-9");
+            
+            return false;
+          });
+        });
+     </script>
+</head>
+<body>
+	<div class="header">
+		<div class="row">
+			  <div class="col-md-12">
+				  <div class="header-left">
+					   <div class="logo">
+						    <a href="index.html"><img class="logo-image" src="newImages/Logo/LOGO.png" alt="" height="35" width="75"/></a>
+					   </div>
+             <ul class="header-menu">
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="team.html">PRODUCT</a></li>
+                  <li><a href="experiance.html">PRESS</a></li>
+                  <li><a href="experiance.html">SUPPORT</a></li>
+                <div class="clear"></div>
+             </ul>
+	    		   <div class="clear"></div>
+	    	  </div>
+	        <div class="header_right" style="margin:5px; width:12%;">
+				    <button class="buy-button">
+              <a href="#">BUY NOW</a>
+            </button>
+	         </div>
+	      </div>
+	 </div>
+	</div>
+	<div class="banner">
+    <div class="col-md-12 video">
+      <img class="prod-img" src="images/E0301/slide.jpg"/>
+      <img class="prod-img-mobile" src="images/E0301/slide-mobile.jpg"/>
+    </div>
+  </div>
+	 
+<!-- gallery end -->
+<div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>PRODUCT</h4>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="#">TECH SPECS</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>COMPANY</h4>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">PRESS</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CAREER</a></li>
+              <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>SOCIAL STUFF</h4>
+                            <li><a href="#">FACEBOOK</a></li>
+                            <li><a href="#">TWITTER</a></li>
+                            <li><a href="#">PINTEREST</a></li>
+                            <li><a href="#">INSTAGRAM</a></li>
+                        </ul>
+                    </div>
+          <div class="col-md-2">
+            <ul class="footer_box">
+              <h4>ENGLISH <span class="caret"></span></h4>
+            </ul>
+          </div>
+                    <div class="col-md-offset-1 col-md-3">
+                        <ul class="footer_box">
+                            <li><img class="logo-footer" src="newImages\Logo\LOGO.png"/></li>
+              <li><a href="#">email address</a></li>
+              <hr>
+             <li><a href="#">Copyright Terms & Conditions | Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <script type="text/javascript">
+   $(document).ready(function(){
+    $('.awesome-tooltip').tooltip({
+        placement: 'left'
+    });   
+
+    $(window).bind('scroll',function(e){
+      dotnavigation();
+    });
+    
+    function dotnavigation(){
+             
+        var numSections = $('section').length;
+        
+        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');     
+        $('section').each(function(i,item){
+          var ele = $(item), nextTop;
+          
+          console.log(ele.next().html());
+          
+          if (typeof ele.next().offset() != "undefined") {
+            nextTop = ele.next().offset().top;
+          }
+          else {
+            nextTop = $(document).height();
+          }
+          
+          if (ele.offset() !== null) {
+            thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
+          }
+          else {
+            thisTop = 0;
+          }
+          
+          var docTop = $(document).scrollTop();
+          
+          if(docTop >= thisTop && (docTop < nextTop)){
+            $('#dot-nav li').eq(i).addClass('active');
+          }
+        });   
+    }
+
+    /* get clicks working */
+    $('#dot-nav li').click(function(){
+      
+        var id = $(this).find('a').attr("href"),
+          posi,
+          ele,
+          padding = 0;
+      
+        ele = $(id);
+        posi = ($(ele).offset()||0).top - padding;
+      
+        $('html, body').animate({scrollTop:posi}, 'slow');
+      
+        return false;
+    });
+
+/* end dot nav */
+});
+
+  </script>
+</body>
+</html>
