@@ -8,7 +8,7 @@ app.factory('shoppingcartService', ['$window','$cookies', function(win, $cookies
 	var factory = {};
 	factory.cookies_ = $cookies;
    factory.productMap = [{id:'product1', name:'1M301', imgSrc : 'images/slide3-1.jpg', price:29.99},
-					   {id:'product2', name:'EO301',imgSrc : 'images/slide4-2.jpg', price:200},
+					   {id:'product2', name:'EO301',imgSrc : 'images/slide4-2.jpg', price:79.99},
 					   {id:'product3', name:'E0323',imgSrc : 'images/slide4-1.jpg', price:79.99},
 					   {id:'product4', name:'MK801',imgSrc : 'images/slide3-2.jpg', price:79.99}];
    factory.multiply = function(a, b) {
