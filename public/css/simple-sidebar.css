@@ -1,0 +1,154 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-right: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-right: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+#quickslider{width:100%px; margin:0 auto; position: absolute; left:0px;  top:65px;}
+.quickslider{position: relative; float: left; display: block; width: 990px; height:calc(100%-120);}
+.quickslider div{display: none; margin: 0; padding: 0; position: absolute;}
+
+.nav-thumbs{position: absolute; clear:both; transform:rotate(90deg); bottom:50%; right:-45px;}
+.nav-thumbs ul{list-style-type: none;}
+.nav-thumbs ul li{float:left; margin-top:20px;}
+.nav-thumbs ul li a{
+    display:block;
+    width:10px;
+    height:10px;
+    float: left;
+    margin:0 5px;
+    background-color: #fff;
+    text-indent: -9999px;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+.nav-thumbs ul li a:hover, .nav-thumbs ul li a.active{background-color: #a89d8a !important;}
+.active{background-color: #a89d8a !important;}
+
+.quickslider-nav{position:relative; clear:both; color:#000;}
+.quickslider-nav a{text-decoration: none;}
+.quickslider-nav .left{float: left; background-color: #fff; padding:5px 10px;}
+.quickslider-nav .right{float: right; background-color: #fff; padding:5px 10px;}
+.quickslider-nav .left:hover, .quickslider-nav .right:hover{background-color: #000; color:#fff;}
