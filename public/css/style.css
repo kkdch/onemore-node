@@ -14,6 +14,17 @@ body a{
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 }
+.shoppingcart-body {
+	background:#E4E4EC;
+}
+.shoppingcart-header{
+	background:black;
+	padding: 10px 0;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	z-index: 1;
+}
 .header{
 	background:transparent;
 	padding: 10px 0;
@@ -452,9 +463,13 @@ li.list_desc h4 a:hover{
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 	background: #7f0000;
+	width: 122px;
 }
 .buy-button{
+	padding: 0;
+	border: none;
 	text-align: left;
+	width: 122px;
 }
 
 .login_button{
@@ -524,7 +539,6 @@ p.m_5{
 	background:#323232;
 	z-index:1;
 	bottom:0;
-	height:250px;
 	width:100%;
 }
 li.footer_box{
@@ -1579,11 +1593,34 @@ fieldset.input input[type="submit"]:hover {
  }
 }
 @media (max-width:800px){
-.menu {
+  .menu {
 	 margin:10px 0 0;
+  }
+  .header{
+  	position: relative;
   }
   .header_right {
 	 width: 10%;
+	 float: left;
+	 margin-left: 10px;
+  }
+  .header-left{
+  	width: 100%;
+  }
+  .logo{
+  	width: 100%;
+  }
+  ul.header-menu{
+  	padding-left:10px;
+  }
+  ul.header-menu li{
+  	margin-right: 5px;
+  }
+  .prod-img{
+  	display: none;
+  }
+  .prod-img-mobile{
+  	display: inline;
   }
   .icon1 ul {
 	width: 250px;
@@ -1830,7 +1867,7 @@ section {
 	margin-top:20px;
 	background: #000;
 }
-#dot-nav{    
+#dot-nav{
 	right: 10px;
 	top: 50%;
 	margin-top: -50px;
@@ -1868,9 +1905,9 @@ section {
 	top:-5px;
 }
 .awesome-tooltip + .tooltip > .tooltip-inner {
-    background-color: #8e44ad; 
-    color: #fff; 
-    border: 1px solid #8e44ad; 
+    background-color: #8e44ad;
+    color: #fff;
+    border: 1px solid #8e44ad;
 }
 .awesome-tooltip + .tooltip.left > .tooltip-arrow{
     top:50%;
@@ -1881,11 +1918,17 @@ section {
     border-left:5px solid #8e44ad;
 }
 .video-img{
-	height: 800px;
+	width: 100%;
 }
 .slide-img{
 	height: 800px;
 	font-size: left
+}
+.prod-img{
+	width: 100%;
+}
+.prod-img-mobile{
+	display: none;
 }
 .collection-img{
 	height: 500px;
@@ -1916,14 +1959,14 @@ section {
 	float: right;
 	margin: 12%;
 }
-button.home-listen-button{
+a button.home-listen-button{
 	color: #fff;
 	font-weight: lighter;
 	padding: 6px 40px;
 	background: none;
 	border: 1px solid #fff;
 }
-button.home-listen-button:hover{
+a button.home-listen-button:hover{
 	background: #323232;
 	opacity: 0.8;
 }

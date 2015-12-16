@@ -36,8 +36,8 @@ module.exports = function(app) {
   app.get('/index', function(req, res) {
     res.render('index');
   });
-  app.get('/test', function(req, res) {
-    res.render('test');
+  app.get('/shop', function(req, res) {
+    res.render('shop');
   });
   app.post('/', checkout);
 };
