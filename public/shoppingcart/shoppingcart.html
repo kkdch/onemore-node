@@ -63,7 +63,7 @@
           }
         };
     </script>
-  <form action="http://173.227.36.66:3000/" method="POST" id="payment-form">
+  <form action="/" method="POST" id="payment-form">
   <h4 style="margin-top:30px;">Shipping Address</h4>
 
   <md-content layout-padding style="margin-bottom:10px;">
@@ -154,7 +154,7 @@
 
 <div layout-gt-sm="row">
 
-    <label>Total Amount: {{shoppingCtrl.getTotal()}}</label>
+    <label>Total Amount: {{shoppingCtrl.getTotal() | currency}}</label>
 
     <md-button class="md-raised md-primary" type="submit" form="payment-form" value="Submit">Submit Order</md-button>
 

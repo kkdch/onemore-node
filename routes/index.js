@@ -11,7 +11,7 @@ module.exports = function(app) {
     detail += req.body.address1 + " " + req.body.address2 + " ";
     detail += req.body.city + " " + req.body.state + " " + req.body.postalCode;
     var charge = stripe.charges.create({
-      amount: req.body.amount, // amount in cents, again
+      amount: req.body.amount*100, // amount in cents, again
       currency: "usd",
       source: stripeToken,
       description: detail
@@ -23,7 +23,7 @@ module.exports = function(app) {
         });
       } else if (err) {
         res.render('successful', {
-          message: "Error"
+          message:err 
         });
       } else {
         res.render('successful', {
