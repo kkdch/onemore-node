@@ -5,9 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html ng-app="myApp">
+<html>
 <head>
-<title>Product</title>
+<title>1More-FAQ</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -15,9 +15,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.min.js"></script>
-<script src="app2.js"></script>
 <!--<script src="js/jquery.easydropdown.js"></script>-->
 <!--start slider -->
 <script src="js/modernizr.min.js"></script>
@@ -56,15 +53,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             $("#testbtn").click(function () {
             $("#sidebar").toggleClass("collapsed");
            // $("#slider_container1").toggleClass("col-md-12 col-md-9");
-
+            
             return false;
           });
         });
      </script>
 </head>
 <body>
-	<div class="header">
-		<div class="row">
+	<div class="header" style="position:relative; background:#000;">
+		<div class="row" style="background:#000;">
 			  <div class="col-md-12">
 				  <div class="header-left">
 					   <div class="logo">
@@ -72,28 +69,73 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					   </div>
              <ul class="header-menu">
                   <li><a href="./index.html">HOME</a></li>
-                  <li><a href="./index.html">PRODUCT</a></li>
-                  <li><a href="./index.html">PRESS</a></li>
-                  <li><a href="./index.html">SUPPORT</a></li>
+                  <li><a href="team.html">PRODUCT</a></li>
+                  <li><a href="./comingSoon.html">PRESS</a></li>
+                  <li><a href="./comingSoon.html">SUPPORT</a></li>
                 <div class="clear"></div>
              </ul>
 	    		   <div class="clear"></div>
 	    	  </div>
-	        <div class="header_right" style="margin:5px; width:12%;" ng-controller="AppCtrl as appCtrl" ng-cloak>
-				    <button class="buy-button" ng-click="appCtrl.addProduct('product2')">
-              <a href="#">BUY NOW</a>
-            </button>
-	         </div>
+	        <div class="header_right">
+          <div class="col-md-2">
+            <ul class="icon1 sub-icon1 profile_img">
+              <li><a class="active-icon c1" href="#"> </a></li>
+           </ul>
+               <div class="clear"></div>
+         </div>
+        </div>
 	      </div>
 	 </div>
 	</div>
 	<div class="banner">
-    <div class="col-md-12 video">
-      <img class="prod-img" src="images/E0301/slide.jpg"/>
-      <img class="prod-img-mobile" src="images/E0301/slide-mobile.jpg"/>
+    <div class="col-md-12 text-content">
+      <div class="text-section">
+        <h1 class="title">FAQ</h1>
+        <hr class="section-separator" align="center">
+        <span class="text-left" style="float:left; width:50%;">
+           <h2 class="section-subtitle">1MORE Bluetooth Wireless Headphones</h2>
+           <div>
+             <p>1.The headphones don’t turn on.</p>
+             <p>2.The headphones and my device do not connect, or take a longtime to connect.</p>
+             <p>3.My Android device successfully connects to the headphones, but the headphones don't play music.</p>
+             <p>4.My Android device successfully connects to the headphones, but there is no sound from the headphones while making phone calls.</p>
+             <p>5.The Bluetooth connection is not stable, causing some interruptions.</p>
+             <p>6.While using third party music/video player apps, some in-line remote control functions do not match those in the manual.</p>
+             <p>7.I adjusted the in-line remote control to the maximum volume, but theactual volume still sounds low.</p>
+           </div>
+        </span>
+        <span class="text-right" style="width:50%; text-align:left;float:right;">
+          <h2 class="section-subtitle">1MORE Wired Headphones</h2>
+           <div>
+             <p>1.Some in-line remote control functions do not work with my device.</p>
+             <p>2.The in-ear headphone tips easily fall out of my ears.</p>
+             <p>3.I hear abnormal noises, such as static.</p>
+             <p>4.While using third party music/video player apps, some in-line remote control functions do not match those in the manual.</p>
+             <p>5.I adjusted the in-line remote control to the maximum volume, but the actual volume still sounds low.</p>
+           </div>
+        </div>
+      </span>
+    </div>
+    <div class="col-md-12 text-content">
+      <div class="text-section">
+        <hr class="section-separator" align="center">
+        <h2 class="section-subtitle">Don't find your question?</h2>
+        <form class="question-form">
+          Your Email Address<br>
+          <input class="question-input" type="text" name="Email Address">
+          <br>
+          Your Subject<br>
+          <input class="question-input" type="text" name="Suject">
+          <br>
+          Description<br>
+          <input class="question-input" type="text" nama="Descriptions" style="height:300px;">
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
-
+	 
 <!-- gallery end -->
 <div class="footer">
             <div class="container">
@@ -103,7 +145,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h4>PRODUCT</h4>
                             <li><a href="./index.html">HOME</a></li>
                             <li><a href="#">TECH SPECS</a></li>
-                            <li><a href="./FAQ.html">FAQ</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2">
@@ -116,7 +158,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="#">CONTACT</a></li>
                         </ul>
                     </div>
-                   <div class="col-md-2">
+                    <div class="col-md-2">
                         <ul class="footer_box">
                             <h4>SOCIAL STUFF</h4>
                             <li><a href="https://www.facebook.com/1MoreUSA/">FACEBOOK</a></li>
@@ -125,14 +167,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li><a href="https://www.instagram.com/1MOREUSA/">INSTAGRAM</a></li>
                         </ul>
                     </div>
-					  <div class="col-md-2">
-						<ul class="footer_box">
-						  <h4>ENGLISH</h4>
-						  <a>
-							<h4>中文</h4>
-						  </a>
-						</ul>
-					  </div>
+          <div class="col-md-2">
+            <ul class="footer_box">
+              <h4>ENGLISH <span class="caret"></span></h4>
+            </ul>
+          </div>
                     <div class="col-md-offset-1 col-md-3">
                         <ul class="footer_box">
                             <li><img class="logo-footer" src="newImages\Logo\LOGO.png"/></li>
@@ -144,67 +183,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
         </div>
-  <script type="text/javascript">
-   $(document).ready(function(){
-    $('.awesome-tooltip').tooltip({
-        placement: 'left'
-    });
-
-    $(window).bind('scroll',function(e){
-      dotnavigation();
-    });
-
-    function dotnavigation(){
-
-        var numSections = $('section').length;
-
-        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');
-        $('section').each(function(i,item){
-          var ele = $(item), nextTop;
-
-          console.log(ele.next().html());
-
-          if (typeof ele.next().offset() != "undefined") {
-            nextTop = ele.next().offset().top;
-          }
-          else {
-            nextTop = $(document).height();
-          }
-
-          if (ele.offset() !== null) {
-            thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
-          }
-          else {
-            thisTop = 0;
-          }
-
-          var docTop = $(document).scrollTop();
-
-          if(docTop >= thisTop && (docTop < nextTop)){
-            $('#dot-nav li').eq(i).addClass('active');
-          }
-        });
-    }
-
-    /* get clicks working */
-    $('#dot-nav li').click(function(){
-
-        var id = $(this).find('a').attr("href"),
-          posi,
-          ele,
-          padding = 0;
-
-        ele = $(id);
-        posi = ($(ele).offset()||0).top - padding;
-
-        $('html, body').animate({scrollTop:posi}, 'slow');
-
-        return false;
-    });
-
-/* end dot nav */
-});
-
-  </script>
 </body>
 </html>
