@@ -585,6 +585,9 @@ ul.footer_box li a:hover{
 	background:#222;
 	color:#fff;
 }
+.footer .col-md-2{
+	padding: 10px;
+}
 ul.social{
 	list-style:none;
 	padding:0;
@@ -1987,4 +1990,15 @@ a button.home-listen-button:hover{
 .section-separator{
 	margin: 20px 0;
 	border-color: #999999;
+}
+.question-form{
+	text-align: left;
+	width: 100%;
+}
+.question-input{
+	border:1px solid #999999;
+	margin:10px 0 20px 0;
+	background: none;
+	height: 30px;
+	width: 50%;
 }
