@@ -14,17 +14,6 @@ body a{
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 }
-.shoppingcart-body {
-	background:#E4E4EC;
-}
-.shoppingcart-header{
-	background:black;
-	padding: 10px 0;
-	position: fixed;
-	height: 50px;
-	width: 100%;
-	z-index: 1;
-}
 .header{
 	background:transparent;
 	padding: 10px 0;
@@ -1616,12 +1605,6 @@ fieldset.input input[type="submit"]:hover {
   ul.header-menu li{
   	margin-right: 5px;
   }
-  .prod-img{
-  	display: none;
-  }
-  .prod-img-mobile{
-  	display: inline;
-  }
   .icon1 ul {
 	width: 250px;
 	top: 59px;
@@ -1724,6 +1707,12 @@ fieldset.input input[type="submit"]:hover {
   }
 }
 @media (max-width:480px){
+  .prod-img{
+  	display: none;
+  }
+  .prod-img-mobile{
+  	display: inline;
+  }
   .header_right {
 	 width: 15%;
   }
@@ -1867,7 +1856,7 @@ section {
 	margin-top:20px;
 	background: #000;
 }
-#dot-nav{
+#dot-nav{    
 	right: 10px;
 	top: 50%;
 	margin-top: -50px;
@@ -1905,9 +1894,9 @@ section {
 	top:-5px;
 }
 .awesome-tooltip + .tooltip > .tooltip-inner {
-    background-color: #8e44ad;
-    color: #fff;
-    border: 1px solid #8e44ad;
+    background-color: #8e44ad; 
+    color: #fff; 
+    border: 1px solid #8e44ad; 
 }
 .awesome-tooltip + .tooltip.left > .tooltip-arrow{
     top:50%;
@@ -1969,4 +1958,33 @@ a button.home-listen-button{
 a button.home-listen-button:hover{
 	background: #323232;
 	opacity: 0.8;
+}
+.text-content{
+	background: #e5e5e5;
+}
+.title{
+	font-weight: 900;
+	font-size: 40px;
+	color: #323232;
+}
+.text-section{
+	margin: 30px 100px;
+}
+.text-section p{
+	margin-top: 20px;
+}
+.section-title{
+	margin-top:10px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.section-subtitle{
+	color: #666666;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 30px 0 10px 0;
+}
+.section-separator{
+	margin: 20px 0;
+	border-color: #999999;
 }

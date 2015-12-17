@@ -1,0 +1,202 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>1More-About Us</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/jquery.easydropdown.js"></script>-->
+<!--start slider -->
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+
+            $("#testbtn").click(function () {
+            $("#sidebar").toggleClass("collapsed");
+           // $("#slider_container1").toggleClass("col-md-12 col-md-9");
+            
+            return false;
+          });
+        });
+     </script>
+</head>
+<body>
+	<div class="header" style="position:relative; background:#000;">
+		<div class="row" style="background:#000;">
+			  <div class="col-md-12">
+				  <div class="header-left">
+					   <div class="logo">
+						    <a href="index.html"><img class="logo-image" src="newImages/Logo/LOGO.png" alt="" height="35" width="75"/></a>
+					   </div>
+             <ul class="header-menu">
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="team.html">PRODUCT</a></li>
+                  <li><a href="experiance.html">PRESS</a></li>
+                  <li><a href="experiance.html">SUPPORT</a></li>
+                <div class="clear"></div>
+             </ul>
+	    		   <div class="clear"></div>
+	    	  </div>
+	        <div class="header_right">
+          <div class="col-md-2">
+            <ul class="icon1 sub-icon1 profile_img">
+              <li><a class="active-icon c1" href="#"> </a></li>
+           </ul>
+               <div class="clear"></div>
+         </div>
+        </div>
+	      </div>
+	 </div>
+	</div>
+	<div class="banner">
+    <div class="col-md-12 text-content">
+      <div class="text-section">
+        <h1 class="title">ABOUT US</h1>
+        <hr class="section-separator" align="center">
+        <p> 1MORE Inc., was established in 2013 and is headquartered in Shenzhen China, with origins focusing on acoustic design and development, smart software and wearable products. 1MORE is what we do. We always take one more step to provide the highest quality and performance. 1MORE devotes itself to delivering products with cutting edge designs and unbeatable prices.</p>
+        <p> 1MORE is cultivating long term strategic partnerships with vital suppliers. Through joint component research and development, our bond is strengthened. Incorporating fine materials and sophisticated technology, while pursuing the highest quality standards, 1MORE is blending exhilarating fashion with comfort, resulting in a robust product experience.</p>
+        <p>Official Website:
+          <a href="https://www.1more.com">https://www.1more.com</a></p>
+        <hr class="section-separator" align="center">
+      </div>
+      <div class="text-section">
+        <h1 class="section-title">About 1More</h1>
+        <h2 class="section-subtitle">Fashionably designed with acoustics at heart</h2>
+        <p> At 1MORE, our mission is to use the latest technology to create premium quality audio devices at prices everyone can afford, look stylish wearing, and feel good about purchasing. This has been our mission ever since we came out with our first product, the Mi piston headphones, and we have been adhering to these principles ever since. We use environmentally-friendly production processes, premium craftsmanship, fashionable design, and non-toxic materials in every product we build.</p>
+        <hr class="section-separator" align="center">
+      </div>
+      <div class="text-section">
+        <h1 class="section-title">TECHNOLOGY</h1>
+        <h2 class="section-subtitle">Aerospace-grade metal composite diaphragm</h2>
+        <p>The patented triple layer diaphragm design allows a listener to hear music as the musician original intended. The result is clean treble, immaculate mid-range, and powerful bass.</p>
+        <h2 class="section-subtitle">Innovation</h2>
+        <P>1MORE holds a number of patents for its headphone innovations. These include: scratch and slip resistant CD-surface like textured stripes on metal surfaces of the headphones; a dual balanced damping system, and a triple-layer composite diaphragm. 1MORE also originated the intelligent control box, which is compatible with iOS and Android.</P>
+        <h2 class="section-subtitle">Tuned by a Grammy Award winning mixer</h2>
+        <P>Luca Bignardi</P>
+        <hr class="section-separator" align="center">
+      </div>
+      <div class="text-section">
+        <h1 class="section-title">AWARDS</h1>
+        <h2 class="section-subtitle">1MORE is honored to have received a number of prestigious design awards, including:</h2>
+        <p>iF Design Award, 2014, 2015</p>
+        <p>reddot Award, 2015</p>
+        <P>COMPUTEX Innovation Design Award</P>
+        <hr class="section-separator" align="center">
+      </div>
+      <div class="text-section">
+        <h1 class="section-title">PRODUCTS</h1>
+        <h2 class="section-subtitle">1MORE In-Ear Piston Headphones (1M301)</h2>
+        <p>iDual metallic resonant chambers provide dynamic sound</p>
+        <ul>
+          <li>Space Gray and Classic Red</LI>
+        </ul>
+        <h2 class="section-subtitle">1MORE Crystal Piston In-Ear Headphones (EO301)</h2>
+        <p>Embellished with Crystals from Swarovski®</p>
+        <ul>
+          <li>Pink</li>
+          <LI>Black</LI>
+        </ul>
+        <h2 class="section-subtitle">1MORE Dual-Driver In-Ear Headphones (EO323)</h2>
+        <p>Patented structure design for dynamic and balanced armature drivers</p>
+        <ul>
+          <li>Gold and White</li>
+        </ul>
+        <h2 class="section-subtitle">1MORE Over-Ear Headphones (MK801)</h2>
+        <p>Constructed with strong, flexible and lightweight TR-90 steel</p>
+        <ul>
+          <li>Red</li>
+          <LI>Black</LI>
+        </ul>
+      </div>
+      </p>
+    </div>
+  </div>
+	 
+<!-- gallery end -->
+<div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>PRODUCT</h4>
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="#">TECH SPECS</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>COMPANY</h4>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">PRESS</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CAREER</a></li>
+              <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="footer_box">
+                            <h4>SOCIAL STUFF</h4>
+                            <li><a href="https://www.facebook.com/1MoreUSA/">FACEBOOK</a></li>
+                            <li><a href="https://twitter.com/1MOREUSA">TWITTER</a></li>
+                            <li><a href="https://plus.google.com/u/1/b/109723769822278278709/109723769822278278709/">GOOGLE+</a></li>
+                            <li><a href="https://www.instagram.com/1MOREUSA/">INSTAGRAM</a></li>
+                        </ul>
+                    </div>
+          <div class="col-md-2">
+            <ul class="footer_box">
+              <h4>ENGLISH <span class="caret"></span></h4>
+            </ul>
+          </div>
+                    <div class="col-md-offset-1 col-md-3">
+                        <ul class="footer_box">
+                            <li><img class="logo-footer" src="newImages\Logo\LOGO.png"/></li>
+              <li><a href="#">email address</a></li>
+              <hr>
+             <li><a href="#">Copyright Terms & Conditions | Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

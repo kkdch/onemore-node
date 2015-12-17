@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
-<html ng-app="myApp">
+<html>
 <head>
 <title>Product</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -15,9 +15,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script src="js/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.min.js"></script>
-<script src="app2.js"></script>
 <!--<script src="js/jquery.easydropdown.js"></script>-->
 <!--start slider -->
 <script src="js/modernizr.min.js"></script>
@@ -56,7 +53,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             $("#testbtn").click(function () {
             $("#sidebar").toggleClass("collapsed");
            // $("#slider_container1").toggleClass("col-md-12 col-md-9");
-
+            
             return false;
           });
         });
@@ -71,16 +68,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <a href="index.html"><img class="logo-image" src="newImages/Logo/LOGO.png" alt="" height="35" width="75"/></a>
 					   </div>
              <ul class="header-menu">
-                 <li><a href="./index.html">HOME</a></li>
-                  <li><a href="./index.html">PRODUCT</a></li>
-                  <li><a href="./index.html">PRESS</a></li>
-                  <li><a href="./index.html">SUPPORT</a></li>
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="team.html">PRODUCT</a></li>
+                  <li><a href="experiance.html">PRESS</a></li>
+                  <li><a href="experiance.html">SUPPORT</a></li>
                 <div class="clear"></div>
              </ul>
 	    		   <div class="clear"></div>
 	    	  </div>
-	        <div class="header_right" style="margin:5px; width:12%;" ng-controller="AppCtrl as appCtrl" ng-cloak>
-            <button class="buy-button" ng-click="appCtrl.addProduct('product4')">
+	        <div class="header_right" style="margin:5px; width:12%;">
+				    <button class="buy-button">
               <a href="#">BUY NOW</a>
             </button>
 	         </div>
@@ -89,11 +86,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<div class="banner">
     <div class="col-md-12 video">
-      <img class="prod-img" src="images/MK801/slide.jpg"/>
-      <img class="prod-img-mobile" src="images/MK801/slide-mobile.jpg"/>
+      <img class="prod-img" src="images/comingSoon/slide.jpg"/>
+      <img class="prod-img-mobile" src="images/comingSoon/slide-mobile.jpg"/>
     </div>
   </div>
-
+	 
 <!-- gallery end -->
 <div class="footer">
             <div class="container">
@@ -116,7 +113,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
               <li><a href="#">CONTACT</a></li>
                         </ul>
                     </div>
-                   <div class="col-md-2">
+                    <div class="col-md-2">
                         <ul class="footer_box">
                             <h4>SOCIAL STUFF</h4>
                             <li><a href="https://www.facebook.com/1MoreUSA/">FACEBOOK</a></li>
@@ -125,14 +122,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li><a href="https://www.instagram.com/1MOREUSA/">INSTAGRAM</a></li>
                         </ul>
                     </div>
-					  <div class="col-md-2">
-						<ul class="footer_box">
-						  <h4>ENGLISH</h4>
-						  <a>
-							<h4>中文</h4>
-						  </a>
-						</ul>
-					  </div>
+          <div class="col-md-2">
+            <ul class="footer_box">
+              <h4>ENGLISH <span class="caret"></span></h4>
+            </ul>
+          </div>
                     <div class="col-md-offset-1 col-md-3">
                         <ul class="footer_box">
                             <li><img class="logo-footer" src="newImages\Logo\LOGO.png"/></li>
@@ -144,67 +138,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
             </div>
         </div>
-  <script type="text/javascript">
-   $(document).ready(function(){
-    $('.awesome-tooltip').tooltip({
-        placement: 'left'
-    });
-
-    $(window).bind('scroll',function(e){
-      dotnavigation();
-    });
-
-    function dotnavigation(){
-
-        var numSections = $('section').length;
-
-        $('#dot-nav li a').removeClass('active').parent('li').removeClass('active');
-        $('section').each(function(i,item){
-          var ele = $(item), nextTop;
-
-          console.log(ele.next().html());
-
-          if (typeof ele.next().offset() != "undefined") {
-            nextTop = ele.next().offset().top;
-          }
-          else {
-            nextTop = $(document).height();
-          }
-
-          if (ele.offset() !== null) {
-            thisTop = ele.offset().top - ((nextTop - ele.offset().top) / numSections);
-          }
-          else {
-            thisTop = 0;
-          }
-
-          var docTop = $(document).scrollTop();
-
-          if(docTop >= thisTop && (docTop < nextTop)){
-            $('#dot-nav li').eq(i).addClass('active');
-          }
-        });
-    }
-
-    /* get clicks working */
-    $('#dot-nav li').click(function(){
-
-        var id = $(this).find('a').attr("href"),
-          posi,
-          ele,
-          padding = 0;
-
-        ele = $(id);
-        posi = ($(ele).offset()||0).top - padding;
-
-        $('html, body').animate({scrollTop:posi}, 'slow');
-
-        return false;
-    });
-
-/* end dot nav */
-});
-
-  </script>
 </body>
 </html>
